@@ -13,7 +13,7 @@ public class ImageAdapter extends BaseAdapter {
     private Context mContext;
 
     private Integer[] mThumbsIds = {
-            R.mipmap.data_structure_icon, R.mipmap.algorithm_icon, R.mipmap.android_icon, R.mipmap.java_icon
+            R.mipmap.data_structure_icon_1, R.mipmap.algorithm_icon_1, R.mipmap.android_icon_1, R.mipmap.java_icon_1
     };
 
     public ImageAdapter(Context c) {
@@ -40,9 +40,9 @@ public class ImageAdapter extends BaseAdapter {
         ImageView imageView;
         if(view == null) {
             imageView = new ImageView(mContext);
-            imageView.setLayoutParams(new ViewGroup.LayoutParams(500, 500));
-            imageView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
-            imageView.setPadding(8, 8, 8, 8);
+            imageView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, 400));
+            imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
+            imageView.setPadding(2, 2, 2, 2);
         } else {
             imageView = (ImageView) view;
         }
