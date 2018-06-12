@@ -6,18 +6,33 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-
     tools:context=".DataStructureActivity">
 
-    <TextView
-        android:text="Learn"
-        android:gravity="center"
-        android:textColor="@color/colorAccent"
-        android:textSize="30dp"
-        android:textAllCaps="true"
-        android:textStyle="bold"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/learn"
+            android:text="Learn"
+            android:textColor="@color/colorAccent"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_alignRight="@id/learn"
+            android:id="@+id/lcoIcon"
+            android:background="@color/colorPrimary"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/lco_logo_white" />
+    </RelativeLayout>
+
 
     <ListView
         android:id="@+id/quizList"

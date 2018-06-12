@@ -1,8 +1,11 @@
 package com.example.android.interviewpreparation;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -15,6 +18,8 @@ public class DataStructureActivity extends AppCompatActivity {
     private static final String TAG = DataStructureActivity.class.getSimpleName();
     private ArrayList<Quiz> dataStructureArrayList;
     private ListView listView;
+    private ImageView lcoImageView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +27,17 @@ public class DataStructureActivity extends AppCompatActivity {
         setContentView(R.layout.activity_data_structure);
 
         listView = findViewById(R.id.quizList);
+
+        lcoImageView = findViewById(R.id.lcoIcon);
+
+        lcoImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://courses.learncodeonline.in/"));
+                startActivity(intent);
+                //Toast.makeText(MainActivity.this, "Learn Code Online", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         dataStructureArrayList = new ArrayList<>();
 
