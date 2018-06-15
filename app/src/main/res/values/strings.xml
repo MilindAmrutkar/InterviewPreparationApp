@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Interview Preparation</string>
+    <string name="learn">Learn</string>
+    <string name="lco_logo">LCO Logo</string>
 </resources>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,9 +14,9 @@
 
         <TextView
             android:id="@+id/learn"
-            android:text="Learn"
+            android:text="@string/learn"
             android:textColor="@color/colorAccent"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:gravity="center"
             android:textAllCaps="true"
             android:textStyle="bold"
@@ -25,12 +24,12 @@
             android:layout_height="wrap_content" />
 
         <ImageView
-            android:layout_alignRight="@id/learn"
+            android:layout_alignEnd="@id/learn"
             android:id="@+id/lcoIcon"
-            android:background="@color/colorPrimary"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@mipmap/lco_logo_white" />
+            android:contentDescription="@string/lco_logo"
+            android:src="@mipmap/logo_lco" />
     </RelativeLayout>
 
 

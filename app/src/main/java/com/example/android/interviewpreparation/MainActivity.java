@@ -12,11 +12,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.QuickContactBadge;
 import android.widget.Toast;
 
 import com.example.android.interviewpreparation.model.Quiz;
 import com.example.android.interviewpreparation.utilities.NetworkUtils;
+
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private GridView gridView;
     private ImageView imageView;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         gridView = findViewById(R.id.interview_section);
         imageView = findViewById(R.id.lcoIcon);
+
 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
     }
 
     @Override
